@@ -42,3 +42,4 @@ SOFTWARE.
 "# BB-NEWS" 
 "# news" 
 "# news-for-BB" 
+"# news-for-BB" 
