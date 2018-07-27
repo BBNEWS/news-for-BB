@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:id="@+id/sousuor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/sousuo"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/returnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectanglefen"
+        android:onClick="back_to_login"
+        android:text="返回"
+        tools:ignore="OnClick" />
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/sousuor">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/button" />
+    </RelativeLayout>
+
+</RelativeLayout>

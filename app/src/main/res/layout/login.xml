@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="登陆你的头条，精彩永不丢失"
+        android:textSize="17dp" />
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangleyuankuang"
+        android:layout_centerHorizontal="true">
+    <EditText
+        android:id="@+id/editlogin1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入手机号或邮箱:"
+        android:textColorHint="@color/tv_gray_normal"
+        android:textSize="15dp"
+        android:textStyle="bold">
+    </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_below="@+id/r1"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangleyuankuang"
+        android:layout_centerHorizontal="true">
+    <EditText
+        android:id="@+id/editlogin2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:hint="请输入密码:"
+        android:textColorHint="@color/tv_gray_normal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r2"
+        >
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="记住密码"/>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="自动登陆" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/r2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rectanglefen"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonlogin1"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectanglefen"
+        android:gravity="center"
+        android:text="进入头条"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

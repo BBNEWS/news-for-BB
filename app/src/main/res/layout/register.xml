@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+    android:id="@+id/textregister1"
+    android:layout_width="250dp"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:gravity="center"
+    android:text="注册你的头条，精彩永不迷路"
+    android:textSize="17dp" />
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/textregister1"
+        android:background="@drawable/rectangleyuankuang"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/editregister1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入有效手机号或邮箱:"
+        android:textColorHint="@color/tv_gray_normal"
+        android:textSize="15dp"
+        android:textStyle="bold">
+
+    </EditText>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rr2"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rr1"
+        android:background="@drawable/rectangleyuankuang"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/editregister2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:hint="请输入注册密码:"
+        android:textColorHint="@color/tv_gray_normal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:inputType="textPassword"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rr3"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/rr2"
+        android:background="@drawable/rectangleyuankuang"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/editregister3"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:hint="请确认密码:"
+        android:textColorHint="@color/tv_gray_normal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:inputType="textPassword"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rr3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectanglefen"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonregister1"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/buttonregister"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectanglefen"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/hui"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/shouyel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/shouyei"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/hui"
+            android:src="@mipmap/shouye" />
+
+        <TextView
+            android:id="@+id/shouyet"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="首页"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shipinl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/shipini"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/hui"
+            android:src="@mipmap/shipin" />
+
+        <TextView
+            android:id="@+id/shipint"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="视频"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weitoutiaol"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/weitoutiaoi"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/hui"
+            android:src="@mipmap/weitoutiao" />
+
+        <TextView
+            android:id="@+id/weitoutiaot"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="微头条"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wodel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="35dp">
+
+            <ImageButton
+            android:id="@+id/wodei"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/hui"
+            android:src="@mipmap/weitoutiao" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/red" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wodelt"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="我的"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

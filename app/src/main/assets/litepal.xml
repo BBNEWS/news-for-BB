@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="PregnantMonitor" />
+    <version value="7" />
+    <list>
+        <mapping class="com.example.a13016.a7_20.Data.User"/>
+        <mapping class="com.example.a13016.a7_20.Data.Record"/>
+    </list>
+</litepal>
