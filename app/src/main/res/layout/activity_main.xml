@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/news_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CCCCCC">
+
+        <Button
+            android:id="@+id/news_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@mipmap/b14403190"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/detail1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CCCCCC"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/rv_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="写评论..."
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_write"
+                android:layout_weight="0.32" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/e123" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/w123" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/r123" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/detail3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_below="@id/news_detail"
+        android:layout_above="@id/detail1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
